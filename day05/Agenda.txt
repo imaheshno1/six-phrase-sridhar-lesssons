@@ -1,0 +1,397 @@
+Quick Revision
+
+
+Number Dis-integration
+~~~~~~~~~~~~~~~~~~~~~~
+p1 = n / ( 10^nod in p2)
+p2 = n % ( 10^nod in p2)
+
+Destructive
+-----------
+LSD Focus
+			6974
+			6974 % 10		4
+			6974/10
+			697
+			697 % 10		7
+			697 / 10
+			69
+			69 % 10			9
+			69 / 10
+			6
+			6 % 10			6
+			6 / 10
+			0
+			WHILE ( NUM != 0)
+			{
+				DIGIT = NUM % 10;
+				PROCESS;
+				NUM = NUM / 10;
+			}
+
+
+
+				
+MSD Focus
+			6974
+			10^(NOD-1)	
+			LOOP TO FIND THE REQUIRED POWER
+			M1 ) FIND NOD, SUBTRACT 1, FIND THE POWER
+			M2) FIND POWER > THE NUMBER, DIVIDE BY 10
+			M3) FIND (NUM > POWER IS SINGLE DIGIT)
+
+			1
+			10
+			100
+			1000
+			6974/1000		6		1000
+			6974 % 1000
+			974					100
+			974 / 100		9
+			974 % 100
+			74					10
+			74 /10			7
+			74 % 10
+			4					1	
+			4/1			4
+			4%1
+			0					0
+
+
+Non-Destructive
+---------------
+
+LSD Focus
+				(6974/1) % 10		4
+				(6974/10) % 10		7
+				(6974/100) % 10		9
+				(6974/1000) % 10	6
+				(6974/10000)
+				while ( num / power )
+				{
+				   digit = ( num / power ) % 10;
+					process
+				   power *= 10;
+				}
+MSD Focus
+				power = 1;
+				while ( num / power > 9)
+                                    power *= 10;
+
+                                while ( power )
+				{
+				   digit = ( num / power ) % 10;
+					process
+				   power /= 10;
+				}
+
+				(6974/1000) % 10		6
+				(6974/100) %10			9
+				(6974/10) % 10			7
+				(6974/1) % 10			4 
+
+Number Integration
+~~~~~~~~~~~~~~~~~~
+n = p1 * ( 10^nod in p2) + p2
+
+
+Problems
+
+1) Octal to Decimal
+
+15476		6974
+
+30071		12345
+
+15476
+
+1*(8^4) + 5*(8^3) + 4*(8^2) + 7*(8^1) + 6*(8^0)  
+
+LSD
+15476 % 10				6		1/8/64/512/4096/32768
+15476 / 10
+1547 % 10	                        7
+1547/10
+154%10					4
+154/10
+15%10					5
+15/10
+1%10					1
+1/10
+30071
+3*4096 + 0*512 + 0*64 + 7 *8 + 1 *1
+12288 + 57
+12345
+
+2) Binary to Octal
+
+		(30071)8 -> 11000000111001
+
+		(1101010101011101101)2
+		pick 3 BITS at a TIME
+		LSD 1000
+		1101010101011101101 % 1000		101		5
+		1101010101011101101 / 1000
+		1101010101011101 % 1000			101		5	55
+		1101010101011101 / 1000
+		1101010101011 % 1000			011		3	355
+		1101010101011 / 1000
+		1101010101 % 1000			101		5	5355	
+		1101010101 / 1000
+		1101010 % 1000				010		2	25355
+		1101010 / 1000	
+		1101 % 1000				101		3	325355
+		1101 / 1000
+		1 % 1000				  1             1	1325355
+
+
+
+
+
+
+
+
+
+
+3) Rearrange the ODD and EVEN Digits
+
+Input  : 1234567890
+Output : 1357924680
+
+Input  : 1030221289
+Output : 1319002228
+
+LSD / MSD
+
+Digit ??
+LSD
+			1234567890                    digit   EVEN     ODD	EP	OP
+			1234567890 % 10			0	0       0	1	1
+			1234567890/10						10
+			123456789 % 10			9		9		10
+			123456789/10
+			12345678 %10`			8	80		100
+			12345678 / 10
+			1234567 % 10			7		79		100
+			1234567 / 10
+			123456 % 10			6	680		1000
+			123456 /10
+			12345%10			5		579		1000
+			12345/10
+			1234 % 10			4	4680		10000
+			1234/10
+			123%10				3		3579		10000
+			123/10
+			12 % 10				2	24680		100000
+			12 /10
+			1 % 10				1		13579		100000
+			1/10
+			0
+	
+4) Check if a given digit 'd' occurs in a given number 'n'
+
+Constraints
+1 <= n <= 100000000
+0 <= d <= 9
+
+Input : 3681376 6
+Output : true
+
+Input : 874747628 0
+Output : false
+
+
+
+		num		digit		d
+	    874747628		 8		0
+				2	
+				6
+				7
+				4
+				7
+				4
+				7
+				8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5) Check if a given number is a PAN Digital Number
+A number is called pandigital if it uses all of the digits from 1 to n exactly once, where n is the number of digits in the number. So, for example, the five-digit number 15432 is pandigital, but the five-digit number 11132 is not. Again, the four-digit number 4123 is pandigital, but the four-digit number 8312 is not.
+
+Input : 6713542
+Output : true
+
+
+Input : 6809231547
+Output : true
+
+
+Input : 6280921547
+Output : false
+
+Find the number of digits
+
+
+		len	start_digit			end_digit
+		2		1				2
+		3		1				3
+		5		1				5
+		9		1				9
+		10		0				9
+
+
+
+
+
+
+
+
+
+
+
+6) Generate all Armstrong Numbers
+
+
+
+
+
+
+
+
+
+
+7)David and Ross both work in the same office but in different departments. David needs to share a password protected file with Ross. David made a minor change to the password so that file cannot be accessed by anyone else. He interchanged a few digits of the password and shared the new password with a hint to generate the actual password
+Hint: 
+Reverse all the elements from point A to point B (both A and B inclusive), where point A and B are given
+PASSWORD is a Positive Integer
+Write an algorithm to reverse the elements of the password to get the actual password so that file can be opened
+Input
+First Line  - Converted Password
+The next line consists of two space separated integers - startPoint and endPoint representing two points A and B to reverse the elements
+Output
+Print The Original Password
+Example :
+Position 123456789012
+         000000000111
+         345689012345
+         341098652345
+3 8
+Output:
+341098652345
+10000 <= n <= 1000000000000000000
+
+
+8) Given a number 'n' make the smallest possible number using all the digits in 'n'
+
+Input  : 78313427
+Output : 12334778
+
+Input  : 3476038903
+Output : 3003346789
+
+9) 
+
+
+6974
+6 + 9 + 7 + 4 + 69 + 97 + 74 + 697 + 974 + 6974
+
+
+6974 -LSD
+
+Single Digit 10
+6974 % 10		4
+697 % 10		7
+69 % 10			9
+6 % 10			6
+0
+10	0
+100	single
+1000	double digit
+
+Two Digits 100
+6974 % 100		74
+6974 / 10
+697 % 100		97
+697 / 10
+69 % 100		69
+69/10
+6
+
+Three Digits 1000
+6974 % 1000		974
+6974 / 10
+697 % 1000		697
+697 /10
+69
+
+Four Digits
+
+
+
+Write a program to find sum of all characters and their adjacent character combination from given string.
+Consider the below string:
+S1=”321”
+All combination of characters and adjacent character from above string is 3,2,1,32,21,321
+Addition of all number (3+2+1+32+21+321) we can get 380 as result.
+
+Input Format: 
+Candidate has to write the code to accept single string value for S1 without any additional message.
+Only integer characters are allowed.
+
+Output Format:
+Written program code should generate output as single integer value which represents Sum.
+Additional message in output will cause to failure of test cases.
+
+Constraints:
+String contains only number without any space.
+Length of string is less than 5.
+
+Examples:
+Examples -1:
+Input:
+321	(Value of String S1)
+Output:
+380
+
+Examples -2:
+Input:
+12	
+Output:
+15	
+
+Explanation:
+In Examples -2: All possible combinations are 1,2,12
+Sum = 1+2+12=15
+
+
+
+10) GCD
+
+11) LCM
+
+12) LCM of many numbers
+
+
+
+
+
+
+
+
+
+
+
+
+
