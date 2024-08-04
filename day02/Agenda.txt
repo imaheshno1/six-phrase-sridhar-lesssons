@@ -1,0 +1,124 @@
+puts(), gets()
+printf(), scanf()
+3.1415926
+12.7617854
+ 5.87387329870
+--------------
+stdin, stdout, stderr
+stdaux, stdprn
+
+operators
+Arithmetic operations
+~~~~~~~~~~~~~~~~~~~~~
+add, subtract, multiply, divide - quotient and remainder
++ - * / %
+Relational operations
+~~~~~~~~~~~~~~~~~~~~~
+An arithmetic relational expression is interpreted as having the logical value . true. if the values of the operands satisfy the relation specified by the operator. If the operands do not satisfy the specified relation, the expression has the logical value .false.
+
+equal, lesser , greater
+
+< , > , ==, <= , >= , !=
+
+Logical Operators
+~~~~~~~~~~~~~~~~~
+
+Converts nested if.else and cascading if..else into codes that use logical operators 
+Note : The decision that we arrive at should be the same
+
+
+nested if -> AND -> &&
+cascading if -> OR -> ||
+! to negate 
+
+
+Leap Year
+~~~~~~~~~
+
+Nested if..else
+
+Cascaded and Logical Operators
+
+Only Logical Operators
+
+SWITCH
+~~~~~~
+
+* One Variable - multi-states can be constructed using cascading if..else
+* switch is faster than cascading if..else
+* Multipoint entry Construct
+* SINGLE Exit
+* For early EXIT use break
+* case - creates point of entries
+* Works only for INTEGRAL data types in 'C', works for Strings also in Java - Hash Value of the String is used internally
+* default - handles all unmentioned values
+* Only 1 default
+* Can place default at any point, conventionally at the end
+* range is possible in GCC
+
+
+Number Disintegration
+~~~~~~~~~~~~~~~~~~~~~
+
+			6974
+			6000 + 900 + 70 + 4
+			6*1000 + 9*100 + 7*10 + 4*1
+		
+                 	697		4
+			69		74
+			6		974\
+
+			6974/1		6974		6974%1			0
+			6974/10		697		6974%10			4
+			6974/100	69		6974%100		74
+			6974/1000	6		6974%1000		974
+
+
+
+		6974
+		LSD
+		MSD
+
+		LSD
+		~~~
+		6974 % 10		4
+		6974/10
+		
+		697 % 10		7
+		697/10
+
+		69 %10			9
+		69/10
+	
+ 		6 % 10			6
+		6/10
+		0
+
+	  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Looping
+~~~~~~~
+
+
+
