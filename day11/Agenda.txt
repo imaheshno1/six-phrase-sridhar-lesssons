@@ -1,0 +1,85 @@
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+10
+12
+20
+22
+20
+32
+40
+42
+50
+52
+60
+62
+70
+72
+80
+80
+90
+92
+
+
+
+
+Base 2: 1
+Base 4: 123, 321
+Base 6: 14325, 54321
+Base 8: 3254167, 5234761, 5674321
+Base 10: 381654729
+Base 12: No solutions
+Base 14: 9C3A5476B812D
+Base 16: No solutions
+
+What Does Polydivisible Mean?
+Let's use the base 10 solution as an example. We consider the 9 numbers created by removing digits from the end. The full number is called polydivisible if all of these prefixes are divisible by their lengths:
+
+3 is divisible by 1
+38 is divisible by 2
+381 is divisible by 3
+3816 is divisible by 4
+38165 is divisible by 5
+381654 is divisible by 6
+3816547 is divisible by 7
+38165472 is divisible by 8
+381654729 is divisible by 9
+So when the number is truncated to 
+ digits it must be divisible by 
+.
+
+As an aside, the longest polydivisible number in base 10 is 3608528850368400786036725, with 25 digits.
+
+What Does Pandigital Mean?
+Pandigital refers to a number that has each of the possible digits once. Definitions vary as to whether 0 is required or not. For this particular problem it doesn't matter because the polydivisibility constraint ensures that if 0 were included it would always be the final digit. So, using the base 10 example, we can extend it to 3816547290 to include the zero. The solutions are equivalent no matter which definition we choose, we just add or remove a zero accordingly.
+
+The sections that follow will assume that zero is not included.
+
+Only Even Bases Can Have Solutions
+In base 10 it's possible to test whether a number is divisible by 9 just by adding up the digits and checking whether that sum is divisible by 9. There are various ways to prove this but it falls out relatively painlessly if you're happy with modular arithmetic. As an example, consider the number 5342. We can expand out the digits of this number to get:
+
+Backtracking
+
+
+Polydivisible 
+
+'n' Queen
+
+Strings
+~~~~~~~~
+Combination
+
+2D Array
+~~~~~~~~
+Sudoku
+Sudoku Solution verifier
+Sudoku Solver
+
+
