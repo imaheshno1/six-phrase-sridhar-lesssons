@@ -1,0 +1,243 @@
+3) Rearrange the ODD and EVEN Digits
+
+Input  : 1234567890
+Output : 1357924680
+
+Input  : 1030221289
+Output : 1319002228
+
+LSD / MSD
+
+Digit ??
+
+7)David and Ross both work in the same office but in different departments. David needs to share a password protected file with Ross. David made a minor change to the password so that file cannot be accessed by anyone else. He interchanged a few digits of the password and shared the new password with a hint to generate the actual password
+Hint: 
+Reverse all the elements from point A to point B (both A and B inclusive), where point A and B are given
+PASSWORD is a Positive Integer
+Write an algorithm to reverse the elements of the password to get the actual password so that file can be opened
+Input
+First Line  - Converted Password
+The next line consists of two space separated integers - startPoint and endPoint representing two points A and B to reverse the elements
+Output
+Print The Original Password
+Example :
+Position 123456789012
+         000000000111
+         345689012345
+         341098652345
+3 8
+Output:
+341098652345
+10000 <= n <= 1000000000000000000
+
+
+
+
+
+                      
+                        123456789012345
+			000000000111111
+			123456789012345
+
+
+		5	11
+			123410987652345
+
+			1234	56789901	2345
+
+		5		11
+
+			??????? POWER
+
+
+
+
+            12345678		3	6
+            23987023
+	    
+					NOD = 8
+            23078923
+         
+
+			23987023 / 1000000 10^6    FIRST POWER (NOD - FP) + 1
+
+			23987023 / 100	   10^2    THIRD POWER ( 8 - 6) 
+      
+                        123456789012
+			789923451643
+                        78  9923 451643
+			78  2399 451643
+
+
+			3	6
+			789923451643 / 10^10 (12 - 3) + 1 => 10
+			789923451643 / 10^6  12- 6
+
+			NOD 
+			FIRST POWER = 10^( (NOD - FP) + 1)
+			THIRD POWER = 10^( NOD - SP)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+                        123456789012
+			789923451643
+                        78  9923 451643
+			78  2399 451643
+
+
+			3	6
+			789923451643 / 10^10 (12 - 3) + 1 => 10
+			789923451643 / 10^6  12- 6
+
+			NOD 
+			FIRST POWER = 10000000000
+			THIRD POWER = 1000000
+			FIRST_PART = NUM / FIRST_POWER; // 789923451643 / 10000000000
+			THIRD_PART = NUM % THIRD_POWER; // 789923451643 % 1000000 
+			MID_PART =  ( NUM % FIRST_POWER) / THIRD_POWER
+
+			REVERSE THE MIDPART
+			RES = (FIRST_PART * FIRST_POWER) + (MID_PART*THIRDPOWER + THIRD_PART)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0 1 2 3 4 5 6 7 8 9 
+0 0 0 0 0 0 0 0 0 0
+
+12334778
+
+12334778
+
+8) Given a number 'n' make the smallest possible number using all the digits in 'n'
+
+Input  : 78313427
+Output : 12334778
+
+Input  : 3476038903
+Output : 3003346789
+
+
+           33346789
+          3003346789
+
+	671003212
+
+	1122367
+	1	122367	00
+	2
+
+	100122367
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10) GCD
+
+		12	2 2 3 
+		40	2 2 2 5
+		12 	1 2 3 4 6 12
+		40      1 2 4 5 8 10 20 40
+		Find the Smallest
+		12
+		12 to 1
+		The first COMMON FACTOR is GCD
+		4
+
+		4
+
+11) LCM
+
+12) LCM of many numbers
+
+
+Functions
+~~~~~~~~~
+
+* 
+
+
+
+
+
+
+
+
+
+
+
+
