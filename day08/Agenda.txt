@@ -1,0 +1,204 @@
+register / volatile 
+register int sum; // request 
+volatile int num ;// order 
+Recursion
+
+
+Fibonacci
+0 1 1 2 3 5 8 13 21 34 55 89 144
+0 1 2 3 4 5 6  7  8  9 10 11  12
+nth 
+fibo (n ) = fibo ( n-1) + fibo(n-2)
+
+
+GCD
+gcd (a,b) = gcd(b,a%b)
+if a = 0 b is the res
+if b = 0 a is the res
+
+Derangement
+6,9
+2 3 5 
+ThreeFour Series
+threeFour(0) = 3
+threeFour(1) = 4
+
+0 1  2  3  4  5  6   7   8   9   10  11  12  13  14   15   16   17   18   19
+3 4 33 34 43 44 333 334 343 344 433 434 443 444 3333 3334 3343 3344 3433 3434 
+ 20   21   22   23   24   25   26   27   28   29
+3443 3444 4333 4334 4343 4344 4433 4434 4443 4444...........
+
+t	(t/2)-1	
+
+29	13	5	1
+28	13	5	1
+4443    444    44       4
+27	12	5	1
+4434    443     44       4
+26	12	5	1
+25	11	4	1
+24	11	4	1
+23	10	4	1
+22	10	4	1
+21	9	3	0
+
+
+10203010011012
+**4050809
+****607
+
+1 2 3 10 11 12
+  4 5 8 9
+    6 7
+
+
+
+Arrays
+~~~~~~
+[] is an operator
+binary operator
+
+<opr1>[<opr2>]
+<opr1> yields address, <opr2> shole be an int
+<opr1> is an int, <opr2> should be address
+
+int arr [ ]= {6,1,9,2,4,7};
+
+
+arr [ arr_ind ] 
+arr_ind [ arr ] 
+
+1) IS DS needed?
+2) What DS?
+3) What is the traversal ?
+4) Do you need any support ALGO
+5) What do you DO to every single NODE
+
+
+		a+b*c		abc*+
+                     ^
+				abc
+   +*
+
+Declare / Initialize
+
+Access
+0 to n-1
+n-1 to 0
+
+Array as a parameter to function
+Sum
+
+Replace
+1) replace every element with sum of every other element
+{6,1,2,9,7,4}
+2) replace every element with sum of elements on the right
+     index >
+ 0 1 2 3 4 5 
+{6 , 1 , 2 , 9  7 ,4}
+ 23  22  20   11 4 0
+0
+0+4
+4+7
+11+9
+20 + 2
+22 + 1
+23 + 6
+29
+
+
+{23,22,20,11,4,0}
+
+0 1..5 23
+1 2..5 22
+2 3..5 20
+3 4..5 11
+4 5     4
+5 0     0
+
+Home Work
+
+3)  Given an array replace all elements with sum of elements
+on the left
+< index
+   4
+
+
+
+
+
+
+
+
+
+
+Reverse
+  0  1  2  3  4  5  6  7  8  9 10 11 12 13 14
+{63,51,99,49,37,32,23,82,55,77,21,90,13,22,25}
+{25,22,13,90,21,77,55,82,23,32,37,49,99,51,63}
+15
+front	rear
++=1     -=1
+ind	size-(ind+1)
+0 	14
+1	13
+
+Rotating
+  0  1  2  3  4  5  6  7  8  9 10 11 12 13 14
+{63,51,99,49,37,32,23,82,55,77,21,90,13,22,25}
+LEFT rotate
+{51,99,49,37,32,23,82,55,77,21,90,13,22,25,63}
+RIGHT rotate
+{25,63,51,99,49,37,32,23,82,55,77,21,90,13,22}
+
+rot_factor 
+7
+  0  1  2  3  4  5  6  7  8  9 10 11 12 13 14
+{63,51,99,49,37,32,23,82,55,77,21,90,13,22,25}
+{25,63,51,99,49,37,32,23,82,55,77,21,90,13,22} <--- 1
+{22,25,63,51,99,49,37,32,23,82,55,77,21,90,13} <--- 2
+{13,22,25,63,51,99,49,37,32,23,82,55,77,21,90} <--- 3
+{90,13,22,25,63,51,99,49,37,32,23,82,55,77,21} <--- 4
+{21,90,13,22,25,63,51,99,49,37,32,23,82,55,77} <--- 5
+{77,21,90,13,22,25,63,51,99,49,37,32,23,82,55} <--- 6
+{55,77,21,90,13,22,25,63,51,99,49,37,32,23,82} <--- 7
+
+  0  1  2  3  4  5  6  7  8  9 10 11 12 13 14
+{63,51,99,49,37,32,23,82,55,77,21,90,13,22,25}
+{55,77,21,90,13,22,25,63,51,99,49,37,32,23,82} <--- 7
+
+{55,77,21,90,13,22,25,63,51,99,49,37,32,23,82}
+{25,22,13,90,21,77,55,82,23,32,37,49,99,51,63}
+{55,77,21,90,13,22,25,63,51,99,49,37,32,23,82}
+
+Linked List
+
+
+
+
+
+
+Frequency Array
+~~~~~~~~~~~~~~~
+PAN Digital Number
+Make the smallest number possible using all the digits
+
+Sorting
+~~~~~~~
+
+Selection
+
+Sinking / Bubble
+
+Insertion
+
+Quick
+
+Heap Sort
+
+HEAP/,min-heap, max-heap - 30 minutes
+
+
+
+
+
