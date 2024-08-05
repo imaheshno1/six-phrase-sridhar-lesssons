@@ -1,0 +1,15 @@
+Given an array that is made of pairs except one unique value, find the unique value
+
+{12,32,65,21,21,15,32,12,65}
+
+Given an array that is made of triplets except one unique value, find the unique value
+
+{12,32,65,21,21,15,32,12,65,65,21,32,12}
+
+
+Rearrange the array such that all ODD elements occupy the lower indices
+
+{34,67,89,22,44,65,32,90,11,55,33,92,13}
+
+{67,89,65,11,55,33,13,34,22,44,32,90,92}
+
