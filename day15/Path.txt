@@ -1,0 +1,174 @@
+What is a Data Structure ?
+ Static Implementation / Dynamic Implementation
+ Linear / Non-Linear
+
+Linear
+	Array
+	Linked List
+		Singly - structures / dynamic memory allocation
+		Doubly - structures / dynamic memory allocation
+		Circular
+
+        Infix to PostFix - STACK
+        Largest Rectangle in a Histogram - STACK
+
+        Remove nth element from the stack - QUEUE
+        LRU
+Non Linear
+	Binary Heap
+	Binary Search tree
+	Graphs
+		Graph Representation
+			MATRIX
+			Adjacency List
+		Traversal
+			BFS
+			DFS
+		Algo
+			Dijksra's
+			Kruskals
+			Prims
+			Bellman Ford
+			Floyd
+			Hamiltonian
+		Self Balanced Tree
+			AVL
+			Red Black Tree
+	Topological Sort
+Trie's
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Linked List - Singly
+
+1) struct
+2) Dynamic Memory 
+	
+
+Maintenance
+	Creation  - USe
+	AddNodeFirst - 
+	AddNodeLast
+	AddNodePosition
+	AddNodeValue
+	DeleteFirst
+	DeleteLast
+	DeleteValue
+	DeletePosition
+	Printing
+ 		Forward / Reverse
+	Delete a Linked List
+
+Sort a Linked List
+Reverse a Linked List 
+Find the MidPoint 
+Remove 'k'th node from the last 
+Reverse the second half of a Linked List 
+Add Two Huge Numbers
+Detect Loop in a Linked List 
+Remove Loop in a Linled List
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Linked List - Doubly
+
+1) struct
+2) Dynamic Memory 
+	a) Header Node
+	b) Trailer Node
+
+Maintenance
+	Creation
+	AddNodeFirst
+	AddNodeLast
+	AddNodePosition
+	AddNodeValue
+	DeleteFirst
+	DeleteLast
+	DeleteValue
+	DeletePosition
+	Printing
+
+Sort a Linked List
+Reverse a Linked List
+Find the MidPoint
+Reverse the second half of a Linked List
+Detect Loop in a Linked List
+Remove Loop in a Linled List
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Circular Linked List
+Simple Operations
+	Create
+	Delete
+	Print
+Sorted Circular Linked List
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
+Stack
+1) arrays
+2) Dynamic memory
+
+Infix to Postfix
+Largest Rectangle in a Histogram
+Reverse a Singly Linked List
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Queue
+     
+Delete nth element in a stack
+Level Order Traversal
+ZIG ZAG Order
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Binary Heap
+
+Arrays
+	Heap Sort
+	Expression Tree
+Dynamic Allocation
+	Creation
+	Print All Paths
+	Largest Sum of Path
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+BST
+	Creation
+		Add
+		Delete
+		In
+		Pre
+		Post
+		Level
+		ZIG ZAG
+	Print all PATHS
+	Replace PArent with Sum of it's Children
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Graphs
+		Graph Representation
+			MATRIX
+			Adjacency List
+		Traversal
+			BFS
+			DFS
+		Algo
+			Dijksra's
+			Kruskals
+			Prims
+			Bellman Ford
+			Floyd
+			Hamiltonian
+		Self Balanced Tree
+			AVL
+			Red Black Tree
+	Topological Sort	
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Algorithms
+~~~~~~~~~~
+Sorting
+~~~~~~~
+Selection Sort -
+Bubble Sort - 
+Insertion Sort -
+Quick Sort -
+Heap Sort
+Quick Sort   
+Radix Sort - using Linked Lists
+
+Searching
+~~~~~~~~~
+Binary Search
