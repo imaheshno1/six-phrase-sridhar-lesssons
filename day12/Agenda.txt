@@ -1,0 +1,23 @@
+Array	1D
+	
+Pointer	1D
+
+Array 2D
+
+Pointer 2D - row fixed, col dynamic
+
+Pointer 2D - row dynamic, col dynamic
+
+Magic Square Creator
+
+Sudoku Verifier
+Backtracking---???????
+Sudoku Solver
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+structures
+
+
+structures as User defined data types
+
