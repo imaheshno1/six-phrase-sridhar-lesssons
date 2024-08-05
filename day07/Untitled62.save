@@ -1,0 +1,22 @@
+/*
+
+gcd (  n1 , n2 ) = gcd ( n2, n1 % n2 )
+if n1 == 0 n2 is the result - base case
+if n2 == 0 n1 is the result - base case
+
+gcd ( 0,10) 
+gcd ( 15, 0)
+rev(1234) = 4 *1000 + rev(123)
+rev(123) = 3 * 100 + rev (12)
+rev(12) = 2 * 10 + rev(1)
+rev (1) = 1* 1 + rev(0)   
+
+
+f(x) = x^2
+f(x) = x^2 + 2
+
+n1 * n2 = gcd(n1, n2) * lcm(n1, n2)
+
+lcm ( n1, n2 )= (n1*n2) / gcd(n1,n2)
+*/
+

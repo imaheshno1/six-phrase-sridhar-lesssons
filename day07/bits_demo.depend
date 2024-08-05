@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1721810167 source:c:\finemind\with you - at all times\bannari\july 2024\day 6 23072024\bits_demo\all_functions.c
+
+1721811852 source:c:\finemind\with you - at all times\bannari\july 2024\day 6 23072024\bits_demo\main.c
+	<stdio.h>
+	<stdlib.h>
+	"func.h"
+
+1721811386 c:\finemind\with you - at all times\bannari\july 2024\day 6 23072024\bits_demo\func.h
+
+1721811852 source:c:\finemind\with you - at all times\bannari\july 2024\day 6 23072024\bits_demo\one_more.c
+

@@ -1,0 +1,89 @@
+
+8) Given a number 'n' make the smallest possible number using all the digits in 'n'
+
+Input  : 78313427
+Output : 12334778
+
+Input  : 3476038903
+Output : 3003346789
+
+
+           33346789
+          3003346789
+
+	671003212
+
+	1122367
+	1	122367	00
+	2
+
+	100122367
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10) GCD
+
+		12	2 2 3 
+		40	2 2 2 5
+		12 	1 2 3 4 6 12
+		40      1 2 4 5 8 10 20 40
+		Find the Smallest
+		12
+		12 to 1
+		The first COMMON FACTOR is GCD
+		4
+
+		4
+
+11) LCM
+
+12) LCM of many numbers
+
+
+Functions
+~~~~~~~~~
+
+* Named Block of Code
+* Help Others , by sharing your knowledge
+* Reuse
+* Modularity
+* Smaller Source code and Object code
+* Can return only 1 value
+* Speed Compromise, due to overhead of parameter passing and receiving the return value
+* data_type name ( data_type par1, data_type par2 , data_type par3....)
+* Parameters are passed thru STACK
+* return value is sent thru REGISTER(s) / stack
+* Parameters are passed from RIGHT to LEFT
+* void in return type
+* void in parameters
+* recursion
+
+
+int numberOfDigits ( long long int );
+int sumOfDigits ( long long int );
+long long int power ( int base , int exponent);
+long long int power10( int exponent);
+long long int reverser( long long int num );
+int isUpper ( char ch);
+int isLower( char ch);
+int isAlphabet ( char ch );
+int toUpper( char ch );
+int toLower( char ch );
+int sumOfFactors ( int data );
+int isPrime ( long long int data );
+int isLeap ( int year );
+
+
